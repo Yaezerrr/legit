@@ -1,0 +1,1731 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+}
+
+/* Header bar */
+.header-bar {
+    position: relative; /* Change to relative */
+    width: 100%; /* Full width */
+    height: 47px; /* Fixed height */
+    background: rgb(255, 255, 255); /* White background */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header buttons */
+.header-buttons {
+    display: flex; /* Use flexbox for header buttons */
+    align-items: center; /* Center items vertically */
+}
+
+/* Icon container */
+.header-icon-container {
+    display: flex; /* Align icons in a row */
+    margin-right: 20px; /* Space between icons and sign-up button */
+}
+
+/* Header icon styling */
+.header-icon {
+    margin: 0 10px; /* Space between icons */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Icon color */
+    font-size: 20px; /* Icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Header icon hover effect */
+.header-icon:hover {
+    color: #007bff; /* Color change on hover */
+}
+
+/* Sign-up button styling */
+.sign-up-button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Sign-up button hover effect */
+.sign-up-button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+
+/* Image as button styling */
+.header-logo-button {
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Image styling */
+.header-logo {
+    height: 75px; /* Adjust height as necessary */
+    width: 75px;
+}
+/* Header Bottom Bar */
+.header-bottom-bar {
+    position: relative; /* Change to relative */
+    width: 100%; /* Full width */
+    height: 60px; /* Height of the bar */
+    background-color: #4251f3; /* Blue background */
+    padding: 10px; /* Padding around the content */
+    text-align: left; /* Align text to the left */
+    z-index: 999; /* Layering */
+    margin-top: 1px; /* Space below the header bar */
+}
+
+/* Address Text */
+.address {
+    color: #f9ecec; /* Light color for address text */
+    font-size: 14px; /* Font size */
+    margin-right: 200px; /* Space for social media icons */
+}
+
+/* Underlined portion */
+.address .underline {
+    text-decoration: underline; /* Underline this portion */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+/* Hover effect for underlined text */
+.address .underline:hover {
+    color: #e0e0e0; /* Lighter color on hover */
+}
+
+/* Social Media Icons */
+.social-media {
+    position: absolute; /* Absolute positioning for flexibility */
+    bottom: 10px; /* Position up a bit */
+    right: 20px; /* Align to the right */
+    z-index: 10; /* Layering */
+}
+
+/* Social icon styling */
+.social-icon {
+    display: inline-block; /* Inline block for alignment */
+    width: 10px; /* Adjust icon size */
+    height: 1px; /* Adjust icon size */
+    margin: 0 10px; /* Space between icons */
+    color: white; /* Default icon color */
+    font-size: 1.8em; /* Icon size */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+}
+
+/* Icon colors */
+.social-icon.whatsapp { color: #25D366; } /* WhatsApp color */
+.social-icon.instagram { color: #E1306C; } /* Instagram color */
+.social-icon.twitter { color: #1DA1F2; } /* Twitter color */
+.social-icon.phone { color: #34b7f1; } /* Phone color */
+
+/* Hover Effects */
+.social-icon:hover {
+    transform: rotate(15deg) scale(1.2); /* Rotate and scale on hover */
+    opacity: 0.9; /* Slight transparency on hover */
+}
+
+
+
+/* Header Below Bar */
+.header-below-bar {
+    position: relative;
+    top: -1px; /* Directly below the header-bottom-bar */
+    width: 100%;
+    background-color: #23074a; /* Your color */
+    padding: 10px;
+    z-index: 998;
+    height: 60px; /* Adjust the height */
+    overflow: hidden;
+}
+
+.header-below-bar .slider {
+    white-space: nowrap;
+    overflow-x: scroll; /* Make it scrollable horizontally */
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+
+.header-below-bar .slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+/* Each sliding item */
+.header-below-bar .slider-item {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 1em;
+    color: #ffffff; /* White text */
+    display: flex;
+    align-items: center;
+}
+
+/* Text with icon */
+.header-below-bar .slider-item i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+/* Specific styles for the "All Category" button */
+.header-below-bar .all-category-btn {
+    background-color: #ffffff; /* White button */
+    color: #23074a; /* Your color for text */
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-below-bar .all-category-btn i {
+    color: #23074a; /* Same color as text */
+    margin-right: 5px;
+}
+
+
+/* Header Slideshow */
+.header-slideshow {
+    position: relative; /* Changed to relative */
+    width: 100%; /* Full width */
+    height: 400px; /* Set a fixed height for the slideshow */
+    z-index: 0; /* Ensures correct layering below header */
+    overflow: hidden; /* Hide overflow to maintain container size */
+}
+
+.header-img img {
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    display: block; /* Ensure images are displayed */
+}
+
+/* Our Services Section */
+.hero-section {
+    margin-top: 100px; /* Adjust this to add space below the header */
+}
+
+/* Services Box Styles */
+.services-box {
+    background-size: cover;
+    padding: 40px; /* Increased padding for more height */
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    height: auto; /* Allow auto height */
+    max-width: 600px;
+    margin: 40px auto; /* Adjust as necessary for spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    position: relative;
+
+    margin-top: -90px;
+}
+
+/* Grid layout for services */
+.services-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Reset margin */
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between items */
+}
+
+/* Service List Items */
+.services-box li {
+    margin: 10px 0;
+    padding: 20px; /* Increase padding for each item */
+    border: 2px dashed #ccc; /* Style for crossed box */
+    border-radius: 10px; /* Rounded corners */
+    height: 100px; /* Set height for items */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center text */
+}
+
+/* Heading Styles */
+.services-box h2 {
+    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Today's Deal Styles */
+.todays-deal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-size: cover;
+    margin: 10px 0;
+    height: 100px; /* Reduced container height */
+    animation: slideIn 1s ease-in-out;
+    position: relative;
+    top: 60px;
+    margin-top: -10x;
+    margin-bottom: 100px;
+    border: none; /* Removed border */
+}
+
+/* Flexbox for the left section (Best Deal and image) */
+.deal-left {
+    display: flex;
+    flex-direction: column; /* Stack heading and image vertically */
+    align-items: flex-start; /* Align heading and image to the left */
+}
+
+.deal-image {
+    width: 120px; /* Adjusted image width */
+    height: auto;
+    margin-top: 10px;
+    border: none; /* Removed border */
+}
+
+/* Orange Button for Countdown */
+.orange-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px; /* Space between countdown and browse button */
+    transition: background-color 0.3s ease;
+}
+
+.orange-button:hover {
+    background-color: darkorange;
+}
+
+/* Browse All Products Button */
+.browse-button {
+    background-color: #008000; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.browse-button:hover {
+    background-color: #006400; /* Darker green on hover */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* Product Header Styles */
+.product-header h3 {
+    animation: starShine 2s infinite;
+}
+
+@keyframes starShine {
+    0%, 100% {
+        text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00;
+    }
+    50% {
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
+    }
+}
+
+/* Deal Caption Styles */
+.deal-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(16, 1, 1);
+    padding: 10px;
+    display: none;
+}
+
+.deal-caption.active {
+    display: block;
+}
+
+/* Product Grid Adjustments */
+.products-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.product-grid-container {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    max-width: calc(100% - 10px);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Adjusted for smaller size */
+    gap: 10px; /* Increased gap */
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items in a row for mobile */
+    }
+}
+.product-item {
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    padding: 30px;
+    background: white;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #dcdad5;
+}
+
+.product-item img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+.product-header {
+    text-align: center;
+    border-bottom: 2px solid #0b0e11;
+    padding-bottom: 10px;
+    margin: 0 auto 5px; /* Reduced margin bottom */
+    width: 50%;
+}
+
+.product-caption {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #080707;
+}
+.section-divider {
+    border-bottom: 2px solid #131b24;
+    margin: 20px 0;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes wrapFlower {
+    0% {
+        text-shadow: 0 0 5px #FFA500, 0 0 10px #FFA500, 0 0 15px #FFA500, 0 0 20px #FFA500, 0 0 25px #FFA500;
+    }
+    50% {
+        text-shadow: 0 0 5px #008000, 0 0 10px #008000, 0 0 15px #008000, 0 0 20px #008000;
+    }
+    100% {
+        text-shadow: 0 0 5px #FFA500, 0 0 10px #FFA500, 0 0 15px #FFA500, 0 0 20px #FFA500;
+    }
+}
+
+@keyframes rotateIcon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* iPad Section Styles */
+.ipad-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: auto; /* Adjust height for content */
+    background-color: #f8f9fa; /* Light background color */
+    margin: 40px 0; /* Spacing around the section */
+    padding: 20px; /* Add padding for inner content */
+}
+
+.ipad-container {
+    width: 80%; /* Width of the container */
+    max-width: 800px; /* Maximum width */
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.ipad-image {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.ipad-details {
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Space between image and details */
+}
+
+.ipad-name {
+    font-size: 24px; /* Size of the iPad name */
+    font-weight: bold; /* Bold text */
+    color: #23074a; /* Adjust as necessary for your color scheme */
+    margin-bottom: 10px; /* Space below the name */
+}
+
+.ipad-star-rating {
+    margin-bottom: 10px; /* Space below the rating */
+}
+
+.ipad-star {
+    font-size: 24px; /* Size of the stars */
+    color: #FFD700; /* Gold color for filled stars */
+}
+
+.ipad-note {
+    font-size: 16px; /* Size of the note text */
+    color: #555; /* Dark gray for text */
+    max-width: 600px; /* Limit width for note */
+    margin: 0 auto; /* Center note */
+}
+
+/* Progress Bar Styles */
+.ipad-progress-container {
+    position: relative; /* Position for absolute elements */
+    width: 100%; /* Full width */
+    height: 20px; /* Height of the progress bar */
+    background-color: #e1e1e1; /* Background color for the bar */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px 0; /* Space around the progress bar */
+}
+
+.ipad-progress-bar {
+    height: 100%; /* Full height */
+    background-color: #007bff; /* Blue color for the filled portion */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.ipad-progress-status {
+    position: absolute; /* Position the status text */
+    left: 50%; /* Center it horizontally */
+    top: 50%; /* Center it vertically */
+    transform: translate(-50%, -50%); /* Adjust to center */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+}
+
+/* Add to Cart Styles */
+.ipad-add-to-cart {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the button */
+    align-items: center; /* Vertically align items */
+    margin-top: 20px; /* Space above the button */
+}
+
+.ipad-cart-button {
+    display: flex; /* Flex to align icon and text */
+    align-items: center; /* Center items vertically */
+    background-color: #23074a; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.ipad-cart-button:hover {
+    background-color: #5a2e91; /* Darker color on hover */
+}
+
+.ipad-icon {
+    font-size: 24px; /* Icon size */
+    margin: 0 10px; /* Space between icons and button */
+    color: #bcafcf; /* Icon color */
+}
+
+
+
+/* Tabs Styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.tabs button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.tabs button.active {
+    border-color: #008000; /* Active tab color */
+}
+
+.tab-container {
+    overflow: hidden;
+    position: relative;
+    height: auto; /* Height will be managed by JavaScript */
+    transition: height 0.3s ease; /* Smooth transition for height change */
+}
+
+.tab-content {
+    display: none; /* Initially hidden */
+}
+
+.tab-content.active {
+    display: block; /* Show active tab */
+}
+
+/* Flexbox for 2 items side by side */
+.tab-content .tab-carousel {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.tab-content .product-item {
+    flex: 0 0 30%; /* Item width */
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 2px; /* Reduced margin for closer items */
+    position: relative; /* For hover effect */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Outer Border Hover Effect */
+.tab-content .product-item::before {
+    content: '';
+    position: absolute;
+    top: -3px; /* Adjust for outer border */
+    left: -3px; /* Adjust for outer border */
+    right: -3px; /* Adjust for outer border */
+    bottom: -3px; /* Adjust for outer border */
+    border: 2px solid transparent; /* Default transparent border */
+    border-radius: 8px; /* Rounded corners */
+    z-index: 0; /* Behind the item */
+}
+
+.tab-content .product-item:hover::before {
+    border-color: #008000; /* Change to desired hover color */
+}
+
+.tab-content .product-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    z-index: 1; /* Bring to front on hover */
+}
+
+.product-caption {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between icons */
+    color: rgb(215, 132, 132); /* Color of icons */
+    position: absolute; /* Positioning for hover */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the icons */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s; /* Smooth transition for appearance */
+}
+
+.tab-content .product-item:hover .icons {
+    opacity: 1; /* Show icons on hover */
+}
+
+.rating {
+    margin: 5px 0; /* Space above and below stars */
+}
+
+.star {
+    color: grey; /* Grey color for stars */
+    font-size: 16px; /* Star size */
+}
+
+.price {
+    font-size: 18px;
+    margin: 5px 0; /* Space above and below price */
+    color: #008000; /* Color for price */
+}
+
+.progress-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin: 10px 0; /* Space above and below the progress container */
+}
+
+.progress {
+    background-color: #e0e0e0; /* Background for progress bar */
+    border-radius: 5px; /* Rounded corners for progress bar */
+    flex: 1; /* Take available space */
+    height: 10px; /* Height of progress bar */
+    margin-right: 10px; /* Space between progress bar and items left text */
+}
+
+.progress-bar {
+    background-color: #008000; /* Color for the filled portion of the progress bar */
+    height: 100%; /* Fill height of the progress container */
+    border-radius: 5px; /* Rounded corners for filled progress */
+}
+
+.items-left {
+    font-size: 14px; /* Size for items left text */
+    color: grey; /* Color for items left text */
+    min-width: 50px; /* Ensure enough space for text */
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .tab-content .tab-carousel {
+        justify-content: space-between; /* Ensure items remain spaced in mobile */
+    }
+
+    .tab-content .product-item {
+        flex: 0 0 48%; /* Keep two items per row in mobile view */
+        margin-bottom: 20px; /* Add spacing below items in mobile view */
+    }
+
+    .tab-content .product-item img {
+        max-height: 150px; /* Smaller height on mobile */
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+    .tab-content .product-item {
+        flex: 0 0 30%; /* Keep item width */
+        margin: 0 2px; /* Very close margin for items */
+        margin-bottom: 30px; /* Space below items */
+    }
+
+    .tab-content .product-item img {
+        max-height: 200px; /* Keep a reasonable image height */
+    }
+}
+
+.tabs button:hover {
+    border-color: #008000; /* Hover color for tabs */
+}
+
+
+.discount-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Set container background to white */
+    height: 40vh; /* Adjust section height */
+    padding: 0; /* Remove padding to eliminate margin around the image */
+    margin-top: -100px; /* Reduced margin at the top */
+    margin-bottom: -90px; /* Reduced margin at the bottom */
+}
+
+.discount-image {
+    position: relative;
+    width: 100%; /* Ensure the image container fills the section width */
+    height: 100%; /* Image container fills the section height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.discount-image img {
+    max-width: 100%; /* Ensure the image fills the container width */
+    max-height: 100%; /* Ensure the image fills the container height */
+    object-fit: contain; /* Image scales to fit without being cropped */
+}
+
+.btn-shop-now {
+    position: absolute;
+    bottom: 90px; /* Positions the button inside the image */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgba(0, 123, 255, 0.8); /* Button with a transparent background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-shop-now:hover {
+    background-color: rgba(0, 86, 179, 0.8); /* Hover effect */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Slick Dots Visibility */
+.slick-dots {
+    position: absolute;
+    bottom: -30px; /* Adjust to place dots below the flex slider container */
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1000; /* High z-index to ensure dots are above other content */
+    pointer-events: auto; /* Allow interaction with dots */
+    padding: 10px 0; /* Add padding to ensure dots are not cut off */
+}
+
+.slick-dots li {
+    margin: 0 5px; /* Space between dots */
+    display: inline-block; /* Align dots horizontally */
+}
+
+.slick-dots li button {
+    font-size: 0; /* Hide default button text */
+    cursor: pointer; /* Change cursor to pointer for interactive dots */
+}
+
+.slick-dots li button:before {
+    font-size: 12px; /* Size of the dots */
+    color: #000; /* Color of the dots */
+    line-height: 1; /* Align dots properly */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ff0000; /* Color of the active dot */
+}
+
+.flex-slider-section-duplicate {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.flex-slider-heading {
+    font-size: 24px;
+    color: #23074a; /* Maintain your color scheme */
+    margin-bottom: 15px;
+}
+
+.flex-slider-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    height: 160px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Hide scrollbar */
+.flex-slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Style for images inside the flex slider */
+.flex-slider-container img {
+    flex: 0 0 auto;
+    width: 150px; /* Fixed width */
+    height: 80px; /* Fixed height */
+    display: block;
+    margin-right: 0px; /* Removed margin-right */
+    border: none; /* Removed border */
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flex-slider-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the captions */
+.product-item .caption {
+    font-size: 14px;
+    color: #333; /* Caption color */
+    margin-top: 5px;
+}
+
+/* Remove vertical lines between product images */
+.flex-slider-container .product-item {
+    margin-right: 0; /* Ensure no extra spacing between items */
+    border: none; /* Remove any vertical borders */
+}
+
+.bottom-side {
+    background-image: url('images/Revised.jpg');
+    background-size: 160% auto; /* Maintain full width, auto-adjust height */
+    background-position: center top; /* Align image to the top center */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    padding: 40px; /* Adjust padding as needed */
+    color: rgb(109, 130, 104); /* Text color for contrast */
+    position: relative; /* Ensures proper positioning for child elements */
+    margin-top: -1px; /* Space above the section */
+    height: 40vh; /* Container height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+
+
+
+
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.flex-slider-container-ify {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-item-ify {
+    position: relative;
+    width: 30%;
+    margin: 1%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product-item-ify img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-size: cover;
+    width: 25px; /* Reduced width */
+    height: 30px; /* Reduced height */
+    color: rgb(30, 201, 110); /* Change text color for visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 8px; /* Reduced text size */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    background-image: url('images/prototype7.jpg'); /* Default image */
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensure the image fits the reduced size */
+}
+
+.tag.limited {
+    background-color: red; /* Set a solid color for 'Limited' tag */
+    background-image: none; /* Remove the prototype 7 image */
+    width: 30px;
+    height: 20px;
+}
+.icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-item-ify:hover .icon-container {
+    opacity: 1;
+}
+
+.icon-container {
+    display: flex;
+}
+
+.icon-container i {
+    font-size: 1.5em;
+    margin: 0 5px;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.icon-container i:hover {
+    transform: scale(1.2);
+}
+
+.caption-ify,
+.rating-ify,
+.cost-ify {
+    margin-top: 10px;
+}
+
+.header-click-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.header-click-container .clicka {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header-click-container .clicka:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.header-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.header-icon-container img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.header-icon-container i {
+    color: blue;
+    margin: 0 10px;
+}
+
+
+.image-container-used {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images */
+    width: 100%; /* Full width of the section */
+}
+
+.image-item-used {
+    position: relative; /* Positioning for the button and text */
+    margin: 10px 0; /* Space between images */
+    width: 100%; /* Full width of each image item */
+}
+
+.image-item-used img {
+    width: 100%; /* Set the width of the images to fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.buy-now-button-used {
+    position: absolute; /* Position the button at the top right */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    padding: 5px 10px; /* Button padding */
+    background-color: #23074a; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.buy-now-button-used:hover {
+    background-color: #5c4d88; /* Hover color */
+}
+
+.image-text-used {
+    position: absolute; /* Positioning for overlay */
+    bottom: 0; /* Align text at the bottom */
+    left: 0; /* Align text to the left */
+    right: 0; /* Align text to the right */
+    padding: 10px; /* Padding around text */
+  
+    color: white; /* Text color */
+    text-align: center; /* Center align the text */
+    font-size: 14px; /* Text size */
+}
+
+
+
+/* Cali Tabs Styles */
+.cali-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.cali-tabs button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.cali-tabs button.active {
+    border-color: #008000; /* Active tab color */
+}
+
+.cali-tab-container {
+    overflow: hidden;
+    position: relative;
+    height: auto; /* Height will be managed by JavaScript */
+    transition: height 0.3s ease; /* Smooth transition for height change */
+}
+
+.cali-tab-content {
+    display: none; /* Initially hidden */
+}
+
+.cali-tab-content.active {
+    display: block; /* Show active tab */
+}
+
+/* Flexbox for 2 items side by side */
+.cali-tab-content .cali-tab-carousel {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.cali-tab-content .cali-product-item {
+    flex: 0 0 30%; /* Item width */
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 2px; /* Reduced margin for closer items */
+    position: relative; /* For hover effect */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Outer Border Hover Effect */
+.cali-tab-content .cali-product-item::before {
+    content: '';
+    position: absolute;
+    top: -3px; /* Adjust for outer border */
+    left: -3px; /* Adjust for outer border */
+    right: -3px; /* Adjust for outer border */
+    bottom: -3px; /* Adjust for outer border */
+    border: 2px solid transparent; /* Default transparent border */
+    border-radius: 8px; /* Rounded corners */
+    z-index: 0; /* Behind the item */
+}
+
+.cali-tab-content .cali-product-item:hover::before {
+    border-color: #008000; /* Change to desired hover color */
+}
+
+.cali-tab-content .cali-product-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    z-index: 1; /* Bring to front on hover */
+}
+
+.cali-product-caption {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.cali-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between icons */
+    color: rgb(215, 132, 132); /* Color of icons */
+    position: absolute; /* Positioning for hover */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the icons */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s; /* Smooth transition for appearance */
+}
+
+.cali-tab-content .cali-product-item:hover .cali-icons {
+    opacity: 1; /* Show icons on hover */
+}
+
+.cali-rating {
+    margin: 5px 0; /* Space above and below stars */
+}
+
+.cali-star {
+    color: grey; /* Grey color for stars */
+    font-size: 16px; /* Star size */
+}
+
+.cali-price {
+    font-size: 18px;
+    margin: 5px 0; /* Space above and below price */
+    color: #008000; /* Color for price */
+}
+
+.cali-progress-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin: 10px 0; /* Space above and below the progress container */
+}
+
+.cali-progress {
+    background-color: #e0e0e0; /* Background for progress bar */
+    border-radius: 5px; /* Rounded corners for progress bar */
+    flex: 1; /* Take available space */
+    height: 10px; /* Height of progress bar */
+    margin-right: 10px; /* Space between progress bar and items left text */
+}
+
+.cali-progress-bar {
+    background-color: #008000; /* Color for the filled portion of the progress bar */
+    height: 100%; /* Fill height of the progress container */
+    border-radius: 5px; /* Rounded corners for filled progress */
+}
+
+.cali-items-left {
+    font-size: 14px; /* Size for items left text */
+    color: grey; /* Color for items left text */
+    min-width: 50px; /* Ensure enough space for text */
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .cali-tab-content .cali-tab-carousel {
+        justify-content: space-between; /* Ensure items remain spaced in mobile */
+    }
+
+    .cali-tab-content .cali-product-item {
+        flex: 0 0 48%; /* Keep two items per row in mobile view */
+        margin-bottom: 20px; /* Add spacing below items in mobile view */
+    }
+
+    .cali-tab-content .cali-product-item img {
+        max-height: 150px; /* Smaller height on mobile */
+    }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+    .cali-tab-content .cali-product-item {
+        flex: 0 0 30%; /* Keep item width */
+        margin: 0 2px; /* Very close margin for items */
+        margin-bottom: 30px; /* Space below items */
+    }
+
+    .cali-tab-content .cali-product-item img {
+        max-height: 200px; /* Keep a reasonable image height */
+    }
+}
+
+.cali-tabs button:hover {
+    border-color: #008000; /* Hover color for tabs */
+}
+
+
+.section-promo {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.section-lightblue {
+    background-color: #340d91; /* Light Blue */
+    margin-top: 10px;
+}
+
+.section-yellow {
+    background-color: #9f900b; /* Light Yellow */
+    margin-top: 10px;
+   
+}
+
+.content-promo {
+    text-align: center;
+}
+
+.image-promo {
+    max-width: 100%;
+    height: 500px;
+    margin-top: -40px;
+    border-radius: 10px;
+}
+
+.discount-text-promo {
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+.discount-text-promo h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.discount-text-promo p {
+    font-size: 16px;
+}
+
+.shop-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.shop-now-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.section-small-lightblue, .section-small-yellow {
+    display: flex;
+    padding: 10px;
+    margin-top: 20px; /* Increased margin-top */
+}
+
+.section-small-lightblue {
+    background: linear-gradient(to right, lightblue, white);
+}
+
+.section-small-yellow {
+    background: linear-gradient(to right, yellow, rgb(14, 2, 23));
+}
+
+.content-small {
+    display: flex;
+    width: 100%; /* Full width */
+}
+
+.half {
+    flex: 1; /* Equal width for both halves */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.left-half {
+    background-color: rgba(2, 1, 7, 0.5); /* Light blue overlay */
+}
+
+.right-half {
+    background-color: rgba(255, 255, 224, 0.5); /* Light yellow overlay */
+}
+
+.image-placeholder-small {
+    width: 50px; /* Placeholder size */
+    height: 50px; /* Placeholder size */
+    background-color: grey; /* Placeholder color */
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discount-text-small {
+    flex: 1; /* Takes up remaining space */
+}
+
+.small-text {
+    font-size: 12px; /* Smaller text size */
+    margin: 0; /* Remove default margin */
+}
+
+body.body-scroll {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-section {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.scroll-section h2 {
+    font-size: 28px;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.scroll-gadget-item {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px; /* Reduced padding */
+    height: 60px; /* Adjusted height to half of its previous size */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.scroll-gadget-item:hover {
+    box-shadow: 0 6px 12px rgba(7, 218, 53, 0.15);
+}
+
+.scroll-gadget-item img {
+    width: 60px; /* Adjusted width to fit new height */
+    height: 45px; /* Adjusted height to fit new design */
+    border-radius: 8px;
+    margin-right: 10px; /* Reduced margin */
+}
+
+.scroll-gadget-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centered vertically */
+    height: 100%; /* Ensure it occupies the full height of the gadget item */
+}
+
+.scroll-gadget-details h3 {
+    font-size: 16px; /* Reduced font size */
+    color: #333;
+    margin: 0;
+}
+
+.scroll-price {
+    font-size: 14px; /* Reduced font size */
+    color: #e60000;
+    font-weight: bold;
+    margin: 5px 0; /* Reduced margin */
+}
+
+.scroll-gadget-details p {
+    margin: 0;
+    color: #666;
+}
+
+/* Reviews Section Styles */
+.reviews-section {
+    background-color: #ffffff; /* White background for the section */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto; /* Center the section */
+}
+
+/* Header Styles */
+.reviews-header {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333; /* Dark color for text */
+}
+
+.verified-badge {
+    color: #1DA1F2; /* Blue color for the text */
+}
+
+.verified-badge-icon {
+    width: 16px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align with text */
+    margin-left: 4px; /* Space between the text and image */
+}
+
+
+/* Slider Styles */
+.reviews-slider {
+    display: flex;
+    overflow: hidden; /* Hide overflow for a clean look */
+}
+
+.review {
+    background-color: #f9f9f9; /* Light gray background for reviews */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px; /* Spacing between reviews */
+    flex: 0 0 80%; /* Each review takes up 80% of the slider width */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Picture Placeholder */
+.profile-picture-placeholder {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd; /* Placeholder color */
+    border-radius: 50%; /* Circular placeholder */
+    margin-bottom: 10px; /* Space between placeholder and text */
+}
+
+/* Rating Styles */
+.rating {
+    color: #FFD700; /* Gold color for stars */
+}
+
+.star {
+    font-size: 18px; /* Size of the stars */
+}
+
+/* Review Date Styles */
+.review-date {
+    font-size: 12px; /* Smaller text for date */
+    color: #777; /* Gray color for date */
+    margin-top: 5px; /* Space above the date */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .review {
+        flex: 0 0 100%; /* Each review takes full width on smaller screens */
+    }
+
+    .reviews-header {
+        font-size: 20px; /* Slightly smaller header on mobile */
+    }
+}
+
+
+/* Subscribe Section Styles */
+.subscribe-section {
+    background-color: #007BFF; /* Blue background */
+    color: white;              /* White text color */
+    padding: 40px 20px;       /* Padding around the section */
+    text-align: center;        /* Center the text */
+}
+
+.subscribe-title {
+    font-size: 24px;          /* Font size for the title */
+    margin-bottom: 20px;      /* Spacing below the title */
+}
+
+.subscribe-text {
+    font-size: 16px;          /* Font size for the text */
+    margin-bottom: 30px;      /* Spacing below the text */
+}
+
+.subscribe-form {
+    display: inline-block;     /* Center the form */
+}
+
+.subscribe-input {
+    padding: 10px;            /* Padding inside the input field */
+    border: none;             /* No border */
+    border-radius: 5px;       /* Rounded corners */
+    margin-right: 10px;       /* Spacing between input and button */
+}
+
+.subscribe-button {
+    padding: 10px 20px;       /* Padding for the button */
+    border: none;              /* No border */
+    border-radius: 5px;       /* Rounded corners */
+    background-color: #0056b3; /* Darker blue for the button */
+    color: white;              /* White text */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.subscribe-button:hover {
+    background-color: #004494; /* Darken button on hover */
+}
+
+/* Footer Section Styles */
+.footer-section {
+    background-color: black; /* Black background */
+    color: white;            /* White text color */
+    padding: 40px 20px;     /* Padding around the footer */
+}
+
+.footer-container {
+    display: flex;           /* Use flex layout for the footer */
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    gap: 20px;              /* Space between sections */
+}
+
+.footer-container .products,
+.footer-container .help-center,
+.footer-container .company,
+.footer-container .legal {
+    width: 100%;            /* Full width for each section */
+    text-align: left;       /* Align text to the left */
+}
+
+.footer-container div {
+    text-align: center;      /* Center text in Store Location and Logo */
+}
+
+.footer-container .store-location,
+.footer-container .logo-container {
+    text-align: center;      /* Center Store Location and Logo */
+}
+
+.footer-logo {
+    max-width: 150px;       /* Set max width for logo */
+    display: block;         /* Block display for centering */
+    margin: 20px auto;     /* Center the logo */
+}
+
+/* Rights Statement */
+.rights-statement {
+    text-align: center;      /* Center the rights statement */
+}
+
+/* List styles */
+ul {
+    list-style-type: none;  /* Remove bullet points */
+    padding: 0;             /* Remove padding */
+}
+
+li {
+    margin-bottom: 5px;     /* Space between list items */
+    cursor: pointer;        /* Pointer cursor for interactivity */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+li:hover {
+    color: #007BFF;         /* Change color on hover */
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    height: 2000px; /* Added for scroll effect demonstration */
+}
+
+.sticky-chatbox {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: rgba(37, 211, 102, 0.9); /* WhatsApp color with transparency */
+    color: rgb(5, 108, 14);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px; /* Padding for spacing */
+    width: 150px; /* Set width to a more reasonable size */
+    height: 40px; /* Increased height to maintain text visibility */
+    z-index: 1000; /* Ensures it stays on top of other content */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Improved font */
+    font-size: 12px; /* Font size for the text */
+    animation: slide-in 0.5s ease; /* Animation for appearance */
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Transition for scrolling effect */
+    opacity: 1; /* Full opacity by default */
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.chat-content {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center; /* Center the content vertically */
+    height: 100%; /* Ensure it fills the container */
+}
+
+.whatsapp-button {
+    color: white; /* Text color */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Make the text bold */
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-top: 5px; /* Space above the button */
+    padding: 8px 10px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for button */
+    background-color: #128C7E; /* WhatsApp button color */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation for hover effect */
+    font-size: 12px; /* Font size for the button */
+}
+
+.whatsapp-button:hover {
+    background-color: #075E54; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.whatsapp-button i {
+    margin-right: 5px; /* Space between icon and text */
+    font-size: 16px; /* Size of the Font Awesome icon */
+}
+
+/* Transparency when scrolling */
+.sticky-chatbox.scrolled {
+    opacity: 0.4; /* More transparent when scrolling */
+}
+
+/* Remove transparency on hover */
+.sticky-chatbox:hover {
+    opacity: 1; /* Full opacity on hover */
+}
